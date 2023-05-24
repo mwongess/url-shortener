@@ -49,12 +49,18 @@ footer{
 }
 
 .footer-icon:not(:first-child){
-    margin-left: 14px;
+    margin-left: 16px;
 }
 .footer-icons--image{
     width: 16px;
     height: 16px;
     color: hsl(0, 0%, 75%);
+}
+@media only screen and (max-width: 900px){
+    .footer-icons--image{
+        width: 21px;
+        height: 21px;
+    }
 }
 
 @media only screen and (max-width: 600px){
