@@ -30,9 +30,6 @@ const UrlShortenerProvider = ({ children }) => {
         if (url) {
           const res = await fetch(`https://api.shrtco.de/v2/shorten?url=${url}`, {
             method: 'POST',
-            headers: {
-              'Content-Type': 'application/json'
-            },
             body: JSON.stringify(url)
           })
           const data = await res.json()
