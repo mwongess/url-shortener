@@ -1,5 +1,9 @@
+import { useUrlShortenerContext } from '../../App'
 import './main.css'
+
+
 export const Main = () => {
+    const { url, handleClick, handleInputChange, shortUrl } = useUrlShortenerContext()
     return (
         <>
             <div className="main">
@@ -15,17 +19,17 @@ export const Main = () => {
             </div>
             <div className='shorten-container'>
                 <div className='shorten'>
-                    <input type="text" placeholder='Shorten a link here ...'/>
-                    <button>Shorten It!!</button>
+                    <input type="text" placeholder='Shorten a link here ...' onChange={handleInputChange} value={url} />
+                    <button onClick={handleClick}>Shorten It!!</button>
                 </div>
                 <div className="shortened-links">
-                        <div className="short-link">
-                            <p>Long Link</p>
-                            <div className="short-link-right">
-                                <p>Shortlink</p>
-                                <button>Copy</button>
-                            </div>
+                    <div className="short-link">
+                        <p>{url}</p>
+                        <div className="short-link-right">
+                            <p>{shortUrl}</p>
+                            <button>Copy</button>
                         </div>
+                    </div>
                 </div>
 
             </div>
