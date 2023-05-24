@@ -94,6 +94,7 @@ html {
   position: relative;
   padding: 16px;
   padding-top: 30px;
+  background-color: #fff;
 }
 .statistics-growth--img {
   width: fit-content;
