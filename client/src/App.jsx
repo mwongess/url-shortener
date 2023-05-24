@@ -1,17 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './components/header/header'
 import { Main } from './components/main/Main'
+import Footer from './components/footer/Footer'
+import Cta from './components/cta/Cta'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
     <Header/>
     <Main/>
+    <Cta/>
+    <Footer/>
     </>
   )
 }
