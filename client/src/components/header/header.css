@@ -1,68 +1,79 @@
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 6rem;
-    height: 5rem;
-    font-family: sans-serif;
-    font-weight: 550;
-    color: hsl(0, 0%, 75%);
-    cursor: pointer;
-    transition: all .3s;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6rem;
+  height: 5rem;
+  font-family: sans-serif;
+  font-weight: 550;
+  color: hsl(0, 0%, 75%);
+  cursor: pointer;
+  transition: all 0.3s;
 }
-.header_left .header_right > div:hover{
-color: rgba(0, 0, 0, 0.708);
-}
-
-.header_left{
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-    transition: all .5s;
+.header_left .header_right > div:hover {
+  color: rgba(0, 0, 0, 0.708);
 }
 
-.header_right{
-    display: flex;
-    justify-content: space-between;
-    align-items:center ;
-    gap: 3rem;
+.header_left {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  transition: all 0.5s;
 }
-.fa-bars{
+
+.header_right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+.fa-bars {
+  display: none;
+}
+.btn_header {
+  background-color: hsl(180, 66%, 49%);
+  font-family: sans-serif;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  border: none;
+  font-size: x-large;
+}
+
+.hover:hover {
+  color: black;
+}
+
+#btn_header:hover {
+  background-color: rgb(141, 219, 223);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    padding: 0 1rem;
+    align-items: center;
+  }
+  .header_left {
+    gap: 0;
+    height: 100%;
+  }
+  .header_left p * {
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  .header_left span,
+  .header_right {
     display: none;
-}
-.btn_header{
-    background-color: hsl(180, 66%, 49%);
-    font-family: sans-serif;
-    color: white;
-    padding:0.5rem 1rem;
-    border-radius: 50px;
-    border: none;
-    font-size: x-large;
-}
-
-.hover:hover{
-    color: black;
-}
-
-#btn_header:hover{
-    background-color: rgb(141, 219, 223);
-    cursor: pointer;
-}
-
-
-/* @media screen and (max-width:850px){
-  
-} */
-
-@media screen and (max-width: 600px){
-    .header{
-        padding:0 1rem;
-    }
-    .header_left span,.header_right{
-        display: none;
-    }
-  .fa-bars{
+  }
+  .fa-bars {
     display: flex;
-    font-size: 33px;
+    align-items: center;
+    height: 100%;
+  }
+  .fa-bars * {
+    font-size: 40px;
+
   }
 }

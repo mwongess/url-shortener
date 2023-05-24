@@ -15,7 +15,7 @@ function Statistics () {
         <div id='grid-1' className='statistics-growth'>
           <div className='statistics-growth--img'>
             <img
-              src='../../../images/icon-brand-recognition.svg'
+              src='/images/icon-brand-recognition.svg'
               alt='brand-recognition'
             />
           </div>
@@ -28,7 +28,7 @@ function Statistics () {
         <div id='grid-2' className=' statistics-growth'>
           <div className='statistics-growth--img'>
             <img
-              src='../../../images/icon-detailed-records.svg'
+              src='/images/icon-detailed-records.svg'
               alt='detailed-records'
             />
           </div>
@@ -41,7 +41,7 @@ function Statistics () {
         <div id='grid-3' className='statistics-growth'>
           <div className='statistics-growth--img'>
             <img
-              src='../../../images/icon-fully-customizable.svg'
+              src='images/icon-fully-customizable.svg'
               alt='growth-customization'
             />
           </div>

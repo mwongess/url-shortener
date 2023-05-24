@@ -58,7 +58,7 @@
   width: 95%;
   background-color: hsl(257, 27%, 26%);
   border-radius: 7px;
-  background-image: url(../../../images/bg-shorten-desktop.svg);
+  background-image: url(images/bg-shorten-desktop.svg);
 }
 .shorten p{
   display: flex;
@@ -103,7 +103,7 @@
   gap: 2rem;
   align-items: center;
 }
-.short-link-right p a{
+.short-link-right p {
   color: hsl(180, 66%, 49%);
 }
 .short-link-right button { 
