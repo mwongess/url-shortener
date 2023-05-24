@@ -3,16 +3,16 @@ import Header from './components/header/header'
 import { Main } from './components/main/Main'
 import Footer from './components/footer/Footer'
 import Cta from './components/cta/Cta'
-
-function App() {
-
+import Statistics from './components/statistics/statistics'
+function App () {
   return (
-    <Header/>
-    <Main/>
-       < Statistics />
-    <Cta/>
-    <Footer/>
-    </>
+    <div>
+      <Header />
+      <Main />
+      <Statistics />
+      <Cta />
+      <Footer />
+    </div>
   )
 }
 
