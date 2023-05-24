@@ -3,7 +3,7 @@ import './main.css'
 
 
 export const Main = () => {
-    const { url, handleClick, handleInputChange, shortUrl } = useUrlShortenerContext()
+    const { url, handleClick, handleInputChange, shortUrl,errorMessage } = useUrlShortenerContext()
     return (
         <>
             <div className="main">
@@ -19,14 +19,14 @@ export const Main = () => {
             </div>
             <div className='shorten-container'>
                 <div className='shorten'>
-                    <input type="text" placeholder='Shorten a link here ...' onChange={handleInputChange} value={url} />
+                        <input type="text" placeholder='Shorten a link here ...' onChange={handleInputChange} value={url} />
                     <button onClick={handleClick}>Shorten It!!</button>
                 </div>
                 <div className="shortened-links">
                     <div className="short-link">
                         <p>{url}</p>
                         <div className="short-link-right">
-                            <p>{shortUrl}</p>
+                            <p>https://{shortUrl}</p>
                             <button>Copy</button>
                         </div>
                     </div>

@@ -29,14 +29,11 @@ const UrlShortenerProvider = ({ children }) => {
       try {
         if (url) {
           const res = await fetch(`https://api.shrtco.de/v2/shorten?url=${url}`, {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(url)
+            method: 'POST'
           })
           const data = await res.json()
-          setShortUrl(data)
+          setShortUrl(data.result.short_link2)
+          console.log(data)
           console.log(shortUrl);
         }
 
@@ -50,7 +47,7 @@ const UrlShortenerProvider = ({ children }) => {
   ])
 
   return (
-    <UrlShortenerContext.Provider value={{ handleClick, handleInputChange, url, setUrl, setShortUrl ,errorMessaage}}>
+    <UrlShortenerContext.Provider value={{ handleClick, handleInputChange, url, setUrl, shortUrl,setShortUrl ,errorMessaage}}>
       {children}
     </UrlShortenerContext.Provider>
   )
