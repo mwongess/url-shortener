@@ -2,7 +2,8 @@ import './footer.css'
 
 function Footer() {
     return (
-        <footer>
+        <>
+         <footer>
             <div className='footer'>
             <div className="footer-logo">
                 <h3 className='footer-head'>Shortly</h3>
@@ -40,6 +41,8 @@ function Footer() {
             </div>
         </div>
         </footer>
+        </>
+       
         
     )
 }
