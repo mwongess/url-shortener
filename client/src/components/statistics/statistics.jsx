@@ -15,7 +15,7 @@ function Statistics () {
         <div id='grid-1' className='statistics-growth'>
           <div className='statistics-growth--img'>
             <img
-              src='public/images/icon-brand-recognition.svg'
+              src='/images/icon-brand-recognition.svg'
               alt='brand-recognition'
             />
           </div>
