@@ -14,7 +14,7 @@ export const Main = () => {
                     <button className='get-started'>Get Started</button>
                 </div>
                 <div className="main-right">
-                    <img src="../images/illustration-working.svg" alt="" />
+                    <img src="../public/images/illustration-working.svg" alt="" />
                 </div>
             </div>
             <div className='shorten-container'>
