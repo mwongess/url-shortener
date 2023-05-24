@@ -8,10 +8,11 @@ import './App.css'
 function App() {
   return (
     <>
-      <Header />
-      <Main />
-      <Cta />
-      <Footer />
+      <Header/>
+      <Main/>
+      <Statistics />
+      <Cta/>
+      <Footer/>
     </>
   )
 }
