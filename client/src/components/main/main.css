@@ -97,7 +97,7 @@
   gap: 2rem;
   align-items: center;
 }
-.short-link-right p a{
+.short-link-right p {
   color: hsl(180, 66%, 49%);
 }
 .short-link-right button { 

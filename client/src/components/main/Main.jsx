@@ -26,9 +26,9 @@ export const Main = () => {
                     {
                        shortUrl && shortenedLinks.map((shortened_Link, index)=>(
                             <div className="short-link" key={index}>
-                            <p>https://{shortened_Link.long_link}</p>
+                            <p>{shortened_Link.long_link}</p>
                             <div className="short-link-right">
-                                <p><a href='https://{shortened_Link.short_link}' target='_blank'>https://{shortened_Link.short_link}</a></p>
+                                <p>{shortened_Link.short_link}</p>
                                 <button onClick={() => copyToClipboard(shortUrl)} className={buttonText}>{buttonText}</button>
                             </div>
                         </div>
