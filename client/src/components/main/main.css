@@ -2,7 +2,10 @@
 
 .main,
 .main-left,
-.get-started,.shorten{
+.get-started,
+.shorten,
+.short-link,
+.short-link-right {
   display: flex;
 }
 .main {
@@ -38,64 +41,90 @@
   width: 26%;
 }
 .main-right img {
-    width: 100%;
-    height: 40%;
+  width: 100%;
+  height: 40%;
 }
-.shorten-container{
-    width: 100%;
-    padding: 1rem 6rem;
+.shorten-container {
+  width: 100%;
+  padding: 1rem 6rem;
+  background-color: hsla(0, 0%, 75%,0.3);
 }
-.shorten{
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    padding: 1.7rem 3.5rem;
-    width: 95%;
-    background-color: hsl(257, 27%, 26%);
-    border-radius: 7px;
-    background-image: url(../../../images/bg-shorten-desktop.svg);
+.shorten {
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.7rem 3.5rem;
+  width: 95%;
+  background-color: hsl(257, 27%, 26%);
+  border-radius: 7px;
+  background-image: url(../../../images/bg-shorten-desktop.svg);
 }
-.shorten input,.shorten button{
-    height: 3rem ;
-    border-radius: 7px;
+.shorten input,
+.shorten button {
+  height: 3rem;
+  border-radius: 7px;
+}
+.shorten input {
+  padding: 1rem;
+  width: 85%;
+}
+.shorten button {
+  width: 15%;
+  background-color: hsl(180, 66%, 49%);
+  border: none;
+  color: #fff;
+}
+.shortened-links {
+  margin-top: 1rem;
+  width: 95%;
+}
+.short-link {
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
 
 }
-.shorten input{
-    padding: 1rem;
-    width: 85%;
+.short-link-right {
+  gap: 2rem;
+  align-items: center;
 }
-.shorten button{
-    width: 15%;
-    background-color: hsl(180, 66%, 49%);
-    border: none;
-    color: #fff;
+.short-link-right button {
+  background-color: hsl(180, 66%, 49%);
+  color: #fff;
+  border: none;
+  padding: 0.2rem 0.5rem;
+  border-radius: 7px;
+  width: 5rem;
 }
 @media screen and (max-width: 600px) {
-    .main{
-        flex-direction: column-reverse;
-        padding: 1rem;
-    }
-    .main-left{
-        align-items: center;
-        text-align: center;
-    }
-    .main-left h1{
-        font-size: 45px;
-    }
-    .get-started{
-        height: 3.5rem;
-        width: 70%;
-    }
-    .shorten-container{
-        padding: 1rem
-    }
-    .shorten{
-        flex-direction: column;
-        width: 100%;
-        padding: 1.5rem;
-    }
-    .shorten input, .shorten button{
-        width: 100%;
-        height: 3.5rem;
-    }
+  .main {
+    flex-direction: column-reverse;
+    padding: 1rem;
+  }
+  .main-left {
+    align-items: center;
+    text-align: center;
+  }
+  .main-left h1 {
+    font-size: 45px;
+  }
+  .get-started {
+    height: 3.5rem;
+    width: 70%;
+  }
+  .shorten-container {
+    padding: 1rem;
+  }
+  .shorten {
+    flex-direction: column;
+    width: 100%;
+    padding: 1.5rem;
+  }
+  .shorten input,
+  .shorten button {
+    width: 100%;
+    height: 3.5rem;
+  }
 }
