@@ -11,7 +11,7 @@
 .main {
   align-items: center;
   justify-content: space-between;
-  padding: 0 0 0 6rem;
+  padding: 0 0 4rem 6rem;
   gap: 5rem;
 }
 .main-left h1 {
@@ -46,10 +46,11 @@
 }
 .shorten-container {
   width: 100%;
-  padding: 1rem 6rem;
+  padding: 0 6rem;
   background-color: hsla(0, 0%, 75%,0.3);
 }
 .shorten {
+  transform: translateY(-59%);
   align-items: center;
   justify-content: center;
   gap: 1rem;
@@ -75,7 +76,8 @@
   color: #fff;
 }
 .shortened-links {
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
+  transform: translateY(-80%);
   width: 95%;
 }
 .short-link {
@@ -121,6 +123,11 @@
     flex-direction: column;
     width: 100%;
     padding: 1.5rem;
+    transform: translateY(0%);
+  }
+  .shortened-links{
+    margin-top: 1rem;
+    transform: translateY(0%);
   }
   .shorten input,
   .shorten button {

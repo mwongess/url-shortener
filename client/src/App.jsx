@@ -1,3 +1,4 @@
+import Statistics from './components/statistics/statistics'
 import { createContext, useContext } from 'react'
 import Footer from './components/footer/Footer'
 import Header from './components/header/header'
@@ -10,7 +11,7 @@ function App() {
     <>
       <Header/>
       <Main/>
-      <Statistics />
+      <Statistics/>
       <Cta/>
       <Footer/>
     </>
