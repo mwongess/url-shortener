@@ -50,7 +50,6 @@ html {
   margin: 0 auto;
   text-align: left;
   position: relative;
-  z-index: 9999;
 }
 #grid-1 {
   grid-row: 1 / 5;
