@@ -36,8 +36,8 @@ function Footer() {
             <div className="footer-icons">
                 <div className='footer-icon'><img src="/images/icon-facebook.svg" alt="footer-icons" className='footer-icons--image' /></div>
                 <div className='footer-icon'><img src="/images/icon-twitter.svg" alt="footer-icons" className='footer-icons--image' /></div>
-                <div className='footer-icon'><img src="/public/images/icon-pinterest.svg" alt="footer-icons" className='footer-icons--image' /></div>
-                <div className='footer-icon'><img src="/public/images/icon-instagram.svg" alt="footer-icons" className='footer-icons--image' /></div>
+                <div className='footer-icon'><img src="images/icon-pinterest.svg" alt="footer-icons" className='footer-icons--image' /></div>
+                <div className='footer-icon'><img src="/images/icon-instagram.svg" alt="footer-icons" className='footer-icons--image' /></div>
             </div>
         </div>
         </footer>
