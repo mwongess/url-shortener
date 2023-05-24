@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+.main,
+.main-left,
+.get-started,.shorten{
+  display: flex;
+}
+.main {
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 0 6rem;
+  gap: 5rem;
+}
+.main-left h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 4.3rem;
+  color: hsl(260, 8%, 14%);
+}
+.main-left p {
+  font-size: 18px;
+  color: hsl(0, 0%, 75%);
+}
+.main-left {
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.get-started {
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: hsl(180, 66%, 49%);
+  height: 2rem;
+  border: none;
+  padding: 1.3rem;
+  border-radius: 50px;
+  width: 26%;
+}
+.main-right img {
+    width: 100%;
+    height: 40%;
+}
+.shorten-container{
+    width: 100%;
+    padding: 1rem 6rem;
+}
+.shorten{
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.7rem 3.5rem;
+    width: 95%;
+    background-color: hsl(257, 27%, 26%);
+    border-radius: 7px;
+    background-image: url(../../../images/bg-shorten-desktop.svg);
+}
+.shorten input,.shorten button{
+    height: 3rem ;
+    border-radius: 7px;
+
+}
+.shorten input{
+    padding: 1rem;
+    width: 85%;
+}
+.shorten button{
+    width: 15%;
+    background-color: hsl(180, 66%, 49%);
+    border: none;
+    color: #fff;
+}
+@media screen and (max-width: 600px) {
+    .main{
+        flex-direction: column-reverse;
+        padding: 1rem;
+    }
+    .main-left{
+        align-items: center;
+        text-align: center;
+    }
+    .main-left h1{
+        font-size: 45px;
+    }
+    .get-started{
+        height: 3.5rem;
+        width: 70%;
+    }
+    .shorten-container{
+        padding: 1rem
+    }
+    .shorten{
+        flex-direction: column;
+        width: 100%;
+        padding: 1.5rem;
+    }
+    .shorten input, .shorten button{
+        width: 100%;
+        height: 3.5rem;
+    }
+}
