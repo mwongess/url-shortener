@@ -69,6 +69,10 @@
   padding: 1rem;
   width: 85%;
 }
+.red-input{
+  border: 1px solid red;
+  color: red;
+}
 .shorten button {
   width: 15%;
   background-color: hsl(180, 66%, 49%);
@@ -88,17 +92,25 @@
   border-radius: 5px;
 
 }
+
 .short-link-right {
   gap: 2rem;
   align-items: center;
 }
-.short-link-right button {
+.short-link-right p a{
+  color: hsl(180, 66%, 49%);
+}
+.short-link-right button { 
   background-color: hsl(180, 66%, 49%);
   color: #fff;
   border: none;
   padding: 0.2rem 0.5rem;
   border-radius: 7px;
   width: 5rem;
+}
+.Copied{
+  background-color: hsl(257, 27%, 26%) !important;
+  color: #fff;
 }
 @media screen and (max-width: 600px) {
   .main {
