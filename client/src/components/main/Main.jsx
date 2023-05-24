@@ -18,6 +18,15 @@ export const Main = () => {
                     <input type="text" placeholder='Shorten a link here ...'/>
                     <button>Shorten It!!</button>
                 </div>
+                <div className="shortened-links">
+                        <div className="short-link">
+                            <p>Long Link</p>
+                            <div className="short-link-right">
+                                <p>Shortlink</p>
+                                <button>Copy</button>
+                            </div>
+                        </div>
+                </div>
 
             </div>
         </>

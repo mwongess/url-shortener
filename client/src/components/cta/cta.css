@@ -27,7 +27,7 @@
     /* background-color: hsl(257, 27%, 26%); */
 }
 
-@media only screen and (max-width: 375px){
+@media only screen and (max-width: 600px){
     .cta{
         padding: 12px;
         line-height: 1.2;

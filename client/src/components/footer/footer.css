@@ -57,7 +57,7 @@ footer{
     color: hsl(0, 0%, 75%);
 }
 
-@media only screen and (max-width: 375px){
+@media only screen and (max-width: 600px){
     .footer{
         text-align: center;
     }
