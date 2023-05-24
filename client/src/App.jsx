@@ -7,9 +7,9 @@ import Cta from './components/cta/Cta'
 function App() {
 
   return (
-    <>
     <Header/>
     <Main/>
+       < Statistics />
     <Cta/>
     <Footer/>
     </>
