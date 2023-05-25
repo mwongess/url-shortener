@@ -57,7 +57,7 @@
   width: 95%;
   background-color: hsl(257, 27%, 26%);
   border-radius: 7px;
-  background-image: url(images/bg-shorten-desktop.svg);
+  background-image: url(/images/bg-shorten-desktop.svg);
 }
 .shorten p{
   display: flex;
