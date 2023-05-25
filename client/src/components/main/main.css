@@ -60,6 +60,12 @@
   border-radius: 7px;
   background-image: url(images/bg-shorten-desktop.svg);
 }
+.shorten p{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: hsl(0, 0%, 75%);
+}
 .shorten input,
 .shorten button {
   height: 3rem;
